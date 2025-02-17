@@ -1,9 +1,7 @@
 package Lesson25;
 
 public class Object {
-	// toString -   метод возвращает строковое представление объекта
-	// equals - сравнивает два объекта, надо переопределить
-	// hashcode - 
+	// toString -   
 	// Конструктор - для инцилизации 
 
 	String name;
