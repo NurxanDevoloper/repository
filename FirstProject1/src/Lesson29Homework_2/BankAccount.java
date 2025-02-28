@@ -19,7 +19,7 @@ abstract class BankAccount {
 		return balance;
 	}
 	
-	protected void setAccountNumber(String accountNumber) {
+	public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 	
@@ -29,5 +29,4 @@ abstract class BankAccount {
 	
 	public abstract void deposit(double amount);
 	public abstract void withdraw(double amount);
-
 }
