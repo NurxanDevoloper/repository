@@ -81,36 +81,39 @@ public class Main {
 //			e.getLocalizedMessage();
 		// Почти точно также, но немного не конкретно.
 //			e.printStackTrace();
+		// e.getMessage();
 //		}
 //		System.out.println("1");
 
 //		finally - выполняется всегда даже после catch()
 		// Работает даже несмотря на ошибку try,catch
+		
 //		try {
 //			int result = 10/1;
 //		} catch (Exception e) {
 //			System.out.println(e.getMessage());
-//			System.out.println("bloc catch");
+//			System.out.println("block catch");
 //		} finally {
-//			System.out.println("bloc finally");
+//			System.out.println("block finally");
 //		}
 
-		// кок только он увидит одну ошибку то вторую скорее всего не будет показывать.
-
+		// как только он увидит одну ошибку то вторую скорее всего не будет показывать.
 		// Multi-catch
-		try {
-			int[] numbers = { 1, 2, 3 };
-			System.out.println(0 / numbers[2]);
-			String string = null;
-			System.out.println(string.charAt(0));
-		} catch (IndexOutOfBoundsException e) {
-			System.out.println("1");
-		} catch (ArithmeticException e) {
-			System.out.println("2");
-			System.out.println("3");
-		} catch (NullPointerException e) {
-			System.out.println("4");
-		}
+		
+//		try {
+//			int[] numbers = { 1, 2, 3 };
+//			String string = null;
+//			System.out.println(numbers[10]);
+//			System.out.println(string.charAt(0));
+//			System.out.println(10 / 0);
+//		
+//		} catch (IndexOutOfBoundsException e) {
+//			System.out.println("1");
+//		} catch (ArithmeticException e) {
+//			System.out.println("2");
+//		} catch (NullPointerException e) {
+//			System.out.println("3");
+//		}
 
 //		System.out.println("4");
 
@@ -125,15 +128,18 @@ public class Main {
 //			arr[20] = 5;
 //		} catch (Exception e) {
 //			System.out.println("внешний catch работал");
-		
-		checkAge(14);
-		}
+//	}
 
-		public static void checkAge(int a) {
-			if (a < 18) {
-				// Ошибка для возраста меньше 18
-				throw new IllegalArgumentException("Возраст должен быть больше 18");
-			}
-			System.out.println("Доступ разрешен");
-	}//
+//		CheckNumber(-2);
+	}
+	// throw – это оператор в Java, который используется для явного выброса
+	// (генерации) исключения в коде.
+
+	public static void CheckNumber(int number) {
+		if (number < 0) {
+//			 Ошибка для возраста меньше 18
+//			throw new IllegalArgumentException("Число должно быть больше нуля!");
+}
+//		System.out.println("Доступ разрешен");
+	}
 }
