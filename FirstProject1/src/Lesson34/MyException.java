@@ -4,6 +4,6 @@ public class MyException extends Exception{
 	// Создаю свою собственную ошибке
 	public MyException(String message) {
 		// Вызывает конструктор
-		super();
+		super(message);
 	}
 }
