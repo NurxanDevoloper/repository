@@ -17,12 +17,17 @@ public class Person implements Comparator<Person> {
 		return " [name=" + name + ", age=" + age + "]";
 	}
 	
-	@Override
 	public int compare(Person o) {
 		// по убыванию
 		return Integer.compare(o.age, this.age);
 		// по возрастанию
 //		return this.age- o.age;
+	}
+
+	@Override
+	public int compare(Person o1, Person o2) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 }

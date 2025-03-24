@@ -1,33 +1,26 @@
 package Lesson34;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
 
 	public static void main(String[] args) {
-//		try {
-//			riskyMethod();
-//		} catch (Exception e) {
-//			System.out.println("1");
-//		}
+		List<Employee> employees = new ArrayList<Employee>();
+		Employee emp1 = new Employee("Elvin", 12);
+		Employee emp2 = new Employee("Aylin", 14);
+		Employee emp3 = new Employee("Umud", 15);
+		Employee emp4 = new Employee("Nurhan", 13);
+		Employee emp5 = new Employee("Meleyke", 9);
 
-		try {
-			throw new MyException("My Exception!");
-		} catch (MyException e) {
-			System.out.println(e.getMessage());
-		}
-		
-		
-	}
-	
-	// throws - обрабатывает информацию
-	public static void riskyMethod() throws NullPointerException{
-//		int result = 10/0;
-		try {
-			String s = null;
-			System.out.println(s.length());
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-	
+		employees.add(emp1);
+		employees.add(emp2);
+		employees.add(emp3);
+		employees.add(emp4);
+		employees.add(emp5);
+		Collections.sort(employees);
+		System.out.println(employees);
 	}
 
 }
