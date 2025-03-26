@@ -19,6 +19,7 @@ public class Main2 {
 		System.out.println(numbers);
 		
 		// Stream API
+		List<Integer> evenNumbers = numbers.stream().filter(n -> n % 2 == 0).collect(Collectors.toList());
 		System.out.println(evenNumbers);
 	}
 
