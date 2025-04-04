@@ -55,8 +55,8 @@ public class Main {
 		numbers.add(10);
 		// collect = собирает числа
 //		System.out.println(numbers);
-//		List<Integer> evenNumbers = numbers.stream().filter(n->n % 2 == 0).collect(Collectors.toList());
-//		System.out.println(evenNumbers);
+		List<Integer> evenNumbers = numbers.stream().filter(n->n % 2 == 0).collect(Collectors.toList());
+		System.out.println(evenNumbers);
 
 		// map - проходит по всему листу
 		List<Integer> doubledNumbers = numbers.stream().map(s -> s * 2).collect(Collectors.toList());
@@ -67,5 +67,6 @@ public class Main {
 		System.out.println(newNumbers);
 
 	}
+	// lamda выражение
 // ( )  -> {}
 }
