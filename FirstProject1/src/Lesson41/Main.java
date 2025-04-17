@@ -14,7 +14,7 @@ public class Main {
 //		String str = "hello";
 //		String date = "2024.04.04";
 
-		// old version
+		// old version показывает оба и дату и время и словами
 //		Date date2 = new Date();
 //		System.out.println(date);
 
@@ -56,6 +56,7 @@ public class Main {
 		ZonedDateTime zonedDateTime = ZonedDateTime.of(2024,4,2,14,30, 0, 0, ZoneId.of("A/Moscov"));
 		System.out.println(zonedDateTime);
 		
+		LocalDate date = LocalDate.of(2025, 2, 31);	
 	}
 
 }
