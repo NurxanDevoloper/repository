@@ -5,7 +5,7 @@ public class Store {
 
 	// производитель
 	synchronized void put() throws InterruptedException {
-		if (product) wait(); 
+		if (product == true) wait(); 
 		product = true;
 		System.out.println("Произведен 1 товар");
 		 // уведомляем потребителя
@@ -15,7 +15,7 @@ public class Store {
 	synchronized void get() throws InterruptedException {
 		if (!product) wait(); 
 		product = false;
-		System.out.println("Товар потреблен");
+		System.err.println("Товар потреблен");
 		// уведомляем производителя
 		notify();
 	}
